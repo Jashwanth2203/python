@@ -21,4 +21,15 @@
 
 students=['viswa','jashwanth','swaroop','samuel','sai kiran']
 marks=[85,56,45,23,78]
-print(list(zip(students,marks)))
+departments=['cse','csm','eee','ece','it']
+# print(list(zip(students,marks)))
+# print(list(zip(students,marks,departments)))
+
+# for student,mark,department in zip(students,marks,departments):
+# print(dict(zip(students,zip(marks,departments))))
+    
+dict1={}
+for i in range(len(students)):
+    dict1=[students[i]==marks[i],departments[i]]
+print(dict1)
+
